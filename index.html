@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        iframe {
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+        }
+    </style>
+
+
     <title>Resume for Wilfred Almeida</title>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
@@ -27,8 +43,29 @@
     <!-- <embed src="./Resume for Wilfred Almeida.pdf" type="application/pdf" width="100%" height="1000px" download="Resume for Wilfred Almeida.pdf" title="Resume for Wilfred Almeida.pdf" /> -->
 
     <script>
-        window.location="./Resume for Wilfred Almeida.pdf"
+        window.location="./Resume for Wilfred Almeida.pdf";
     </script>
+
+    <!-- <iframe
+        src="https://docs.google.com/gview?url=https://resume.wilfredalmeida.com/Resume%20for%20Wilfred%20Almeida.pdf&embedded=true"
+        title="Wilfred Almeida Resume"
+	></iframe> -->
+
+    <script>
+        function checkMobileDevice() {
+          var isMobile = /iPhone|iPad|iPod|Android|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+          
+          if (isMobile) {
+            // Replace the content of the page body with the iframe
+            document.body.innerHTML = `<iframe src="https://docs.google.com/gview?url=https://resume.wilfredalmeida.com/Resume%20for%20Wilfred%20Almeida.pdf&embedded=true" title="Wilfred Almeida Resume"></iframe>`;
+          }
+        }
+        
+        // Call the function when the page finishes loading
+        window.onload = checkMobileDevice;
+      </script>
+    </body>
+    </html>
 
 </body>
 </html>
