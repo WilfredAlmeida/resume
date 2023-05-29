@@ -25,39 +25,33 @@
     <meta property="og:title" content="Wilfred Almeida Resume"/>
     <meta property="og:type" content="resume pdf"/>
     <meta property="og:url" content="https://resume.wilfredalmeida.com"/>
-    <meta property="og:image" content="https://resume.wilfredalmeida.com/og.jpg"/>
+    <meta property="og:image" itemprop="image" content="https://resume.wilfredalmeida.com/og.jpg"/>
     <meta name="twitter:card" content="summary_large_image" data-react-helmet="true"/>
     <meta name="twitter:creator" content="@WilfredAlmeida_" data-react-helmet="true"/>
     <meta name="twitter:title" content="Wilfred Almeida" data-react-helmet="true"/>
     <meta name="google-site-verification" content="K5oBmfZg1UJ9eL__ylLLMEUZ1i5qjbVQrl9ku4GtqDw" data-react-helmet="true"/>
     <meta property="og:description" content="Resume of Wilfred Almeida | wilfredalmeida.com"/>
+    <meta name="author" content="Wilfred Almeida" />
+    <meta property="og:site_name" content="Wilfred Almeida" />
+    <meta property="og:type" content="website" />
     
     <link rel="icon" type="image/x-icon" href="https://wilfredalmeida.com/favicon-32x32.png?v=b3d097e67b8cdbec68285102ca3bf5ea">
-
-    <!-- <script type="text/javascript" src="index.js"></script> -->
 
 
 </head>
 <body style="margin: 0px">
-    <!-- <div id="adobe-dc-view"></div>
-    <script type="text/javascript" src="https://documentservices.adobe.com/view-sdk/viewer.js"></script> -->
-    <!-- <embed src="./Resume for Wilfred Almeida.pdf" type="application/pdf" width="100%" height="1000px" download="Resume for Wilfred Almeida.pdf" title="Resume for Wilfred Almeida.pdf" /> -->
-
     <script>
         window.location="./Resume for Wilfred Almeida.pdf";
     </script>
 
-    <!-- <iframe
-        src="https://docs.google.com/gview?url=https://resume.wilfredalmeida.com/Resume%20for%20Wilfred%20Almeida.pdf&embedded=true"
-        title="Wilfred Almeida Resume"
-	></iframe> -->
-
     <script>
+
+        //This function servers different content if user is on mobile
         function checkMobileDevice() {
           var isMobile = /iPhone|iPad|iPod|Android|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
           
           if (isMobile) {
-            // Replace the content of the page body with the iframe
+            // Replace the content of the page body with the iframe for embedding PDF
             document.body.innerHTML = `<iframe src="https://docs.google.com/gview?url=https://resume.wilfredalmeida.com/Resume%20for%20Wilfred%20Almeida.pdf&embedded=true" title="Wilfred Almeida Resume"></iframe>`;
           }
         }
